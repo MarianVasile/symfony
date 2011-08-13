@@ -254,6 +254,7 @@ class Container implements ContainerInterface
                 throw $e;
             }
 
+            $this->services[$id] = $service;
             unset($this->loading[$id]);
 
             return $service;
